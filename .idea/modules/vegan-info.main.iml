@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="vegan-info:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="com.diogobotas" external.system.module.type="sourceSet" external.system.module.version="0.0.1-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="4" platform="JVM 11" allPlatforms="JVM [11]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files -java-parameters -Xjsr305=strict" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../build/classes/kotlin/main" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-mongodb-reactive/2.5.5/25a0dcbe879cd7269922e78d68bd380b150f879c/spring-boot-starter-data-mongodb-reactive-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-webflux/2.5.5/efcd05d40ffd50f747f6d37219222d06071fde98/spring-boot-starter-webflux-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.5.5/11923b2b5ca33c6c849952ed1bd47a77c9ec0a85/spring-boot-starter-json-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.12.5/6b2f79547d217ad50dfc5b57af7444a3aa583b43/jackson-datatype-jdk8-2.12.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.12.5/a0a9870b681a72789c5c6bdc380e45ab719c6aa3/jackson-datatype-jsr310-2.12.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.12.5/2c85c2036d0851425a260c01eb5f7ddbed1eeb00/jackson-module-parameter-names-2.12.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.5/b064cf057f23d3d35390328c5030847efeffedde/jackson-databind-2.12.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.5/52d929d5bb21d0186fe24c09624cc3ee4bafc3b3/jackson-annotations-2.12.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.5/725e364cc71b80e60fa450bd06d75cdea7fb2d59/jackson-core-2.12.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-kotlin/2.12.5/9f8be96db441bf7c217db22a03efd6902c0da34e/jackson-module-kotlin-2.12.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.projectreactor.kotlin/reactor-kotlin-extensions/1.1.4/36d9b2b8ab8af682519644ff4030804ab002b284/reactor-kotlin-extensions-1.1.4.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.5.31/1523fcd842a47da0820cea772b19c51056fec8a9/kotlin-reflect-1.5.31.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactor/1.5.2/43700d2146eb36140428bae27755c0243650e75b/kotlinx-coroutines-reactor-1.5.2.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-reactive/1.5.2/6ab6c941fa2cd480a89490b438ba27e6033a30ec/kotlinx-coroutines-reactive-1.5.2.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.5.2/f4cc07a50437659e0043e7da762809a46932b6a0/kotlinx-coroutines-core-jvm-1.5.2.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.5.31/ff5d99aecd328872494e8921b72bf6e3af97af3e/kotlin-stdlib-jdk8-1.5.31.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.5.5/8657d6f1f00002e8a839fc35fe2f2cd7fc09b72a/spring-boot-starter-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/5.3.10/f815fe9eb32c34fd6b116ac8eeee045e44987110/spring-webflux-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-reactor-netty/2.5.5/92d7e87e27d73f0d989d5856713ae446c0aa269e/spring-boot-starter-reactor-netty-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-http/1.0.11/70dbc1f1c47e50f910c192928025621ed3d280d7/reactor-netty-http-1.0.11.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.projectreactor.netty/reactor-netty-core/1.0.11/cfb3a45b62945a46a45a50050ec3b7ae8f5272f6/reactor-netty-core-1.0.11.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.projectreactor/reactor-core/3.4.10/4fac3e29002904d750987aeb6249ff1cd47c5fd5/reactor-core-3.4.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-reactivestreams/4.2.3/909646b62af802f6b041fd284f1c09d9ebe19cb6/mongodb-driver-reactivestreams-4.2.3.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-mongodb/3.2.5/dc492813536626c6b45ea7047152b36f5e1d9d72/spring-data-mongodb-3.2.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.10/31984cef4b5d38f2711cf870994c43e89619ff4e/spring-web-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.5.31/77e0f2568912e45d26c31fd417a332458508acdf/kotlin-stdlib-jdk7-1.5.31.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.31/6628d61d0f5603568e72d2d5915d2c034b4f1c55/kotlin-stdlib-1.5.31.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.5.5/350511c5612eea8df4ef0f95e2c1b3ff3ea962e8/spring-boot-autoconfigure-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.5.5/c6335b6e1aff79b13565890ad833bb8865ae2d50/spring-boot-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.5.5/2731a074593f6b1089060a4af54ef8eee464d7f0/spring-boot-starter-logging-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.10/2840cabc3b3d6b993f8dbb169eb36321c97fec85/spring-tx-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.10/45945cec4c23de39faf98139ad81b59965014ff0/spring-context-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.5.5/4d40ebb9fa2bc841571fd88070986f4442aa8cdb/spring-data-commons-2.5.5.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.10/de0e0c07193697df7ba5db6086020447fdbcb24d/spring-aop-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.10/1ff16eb107dd0411deaffa236467efed44d65c60/spring-beans-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.10/7ca7f1b5f7a2a9e335f45ffaeb59995c8ab344bc/spring-expression-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.10/4e0b94b1e2d7a7399ecedef03dd676c34133625e/spring-core-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.28/7cae037c3014350c923776548e71c9feb7a69259/snakeyaml-1.28.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.3/d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0/reactive-streams-1.0.3.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.mongodb/mongodb-driver-core/4.2.3/ac8159055a465139c643355aa3af7f4c050bceb2/mongodb-driver-core-4.2.3.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.mongodb/bson/4.2.3/c398d70e5015ce677ce34c63f2d8a717eae6734b/bson-4.2.3.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.6/b09efa852337fa0dd9859614389eec58dc287116/logback-classic-1.2.6.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.14.1/ce8a86a3f50a4304749828ce68e7478cafbc8039/log4j-to-slf4j-2.14.1.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.32/8a055c04ab44e8e8326901cadf89080721348bdb/jul-to-slf4j-1.7.32.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.32/cdcff33940d9f2de763bc41ea05a0be5941176c3/slf4j-api-1.7.32.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.31/43331609c7de811fed085e0dfd150874b157c32/kotlin-stdlib-common-1.5.31.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.10/747a2d6ba0d8a74c4f90a8c66c221e3084e864ee/spring-jcl-5.3.10.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.1.68.Final/54c6cebb3e2f83ef6da014400c4cd796f7a82908/netty-codec-http2-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler-proxy/4.1.68.Final/c3d6c71020bd89fb2b850d34b14fde4cf8b8de7d/netty-handler-proxy-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.1.68.Final/fc2e0526ceba7fe1d0ca1adfedc301afcc47bc51/netty-codec-http-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns-native-macos/4.1.68.Final/36b11d339f2b912e7996e8a2e790318f9270c55/netty-resolver-dns-native-macos-4.1.68.Final-osx-x86_64.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.1.68.Final/2148eb41427e6eda586bab0e1c4b8c20b494943/netty-resolver-dns-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.68.Final/3c1d409f43546fd9880e12d4a10473c5ed974870/netty-transport-native-epoll-4.1.68.Final-linux-x86_64.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.6/25be1abb32e870ff042e698a799b56587e0dca9a/logback-core-1.2.6.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.14.1/cd8858fbbde69f46bce8db1152c18a43328aae78/log4j-api-2.14.1.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.68.Final/f55a4ad40f228baf6005ac5ca39915ce5dfb3bd5/netty-handler-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.1.68.Final/43505fc6759c5ee786832082fde5dec8c63ea5d8/netty-codec-dns-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-socks/4.1.68.Final/5cb5a62a61f93a06c8bc6d6a2581f59f49b37951/netty-codec-socks-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.68.Final/910fce1b73c414daf894fbbcfc7a1e8530a69a0f/netty-codec-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.68.Final/a3f09df9ab7cc0870ef868f31319052cfc49cd72/netty-transport-native-unix-common-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.68.Final/8356884a7ad58a3df226eecf955bdfd785e83637/netty-transport-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.68.Final/513c8b3b0b608fa64bfaef473e20f73cc2ae4f2d/netty-buffer-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.68.Final/8c174db162c3dc1bca3020705d0e75845b517ca9/netty-resolver-4.1.68.Final.jar:/Users/diogo.botas/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.68.Final/35820b0f9cb6ae04ea88c43d3c322cb113cbef1b/netty-common-4.1.68.Final.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="vegan-info" />
+          <option name="jvmTarget" value="11" />
+          <option name="languageVersion" value="1.5" />
+          <option name="apiVersion" value="1.5" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.stereotype.Component" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.transaction.annotation.Transactional" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.scheduling.annotation.Async" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.cache.annotation.Cacheable" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.boot.test.context.SpringBootTest" />
+              <option value="plugin:org.jetbrains.kotlin.allopen:annotation=org.springframework.validation.annotation.Validated" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.5.31/d854edda951feb05387ada385f8f3462ec01a885/kotlin-scripting-jvm-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.5.31/512a5997987cd210dcd5442da6aef00a5c12de90/kotlin-scripting-common-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.5.2/f4cc07a50437659e0043e7da762809a46932b6a0/kotlinx-coroutines-core-jvm-1.5.2.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.5.31/ff5d99aecd328872494e8921b72bf6e3af97af3e/kotlin-stdlib-jdk8-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.5.31/77e0f2568912e45d26c31fd417a332458508acdf/kotlin-stdlib-jdk7-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.5.31/6628d61d0f5603568e72d2d5915d2c034b4f1c55/kotlin-stdlib-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.5.31/a06ef07ca3822b0d9c11c69296cd27765f4ed5bb/kotlin-gradle-plugin-api-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.5.31/fa84cbab82c2d4a4e2d0c77520a07c2f146b773f/kotlin-gradle-plugin-model-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.5.31/43331609c7de811fed085e0dfd150874b157c32/kotlin-stdlib-common-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.5.31/3f56bbbc08afd14fbb94bcd558b861be66a3cba9/kotlin-native-utils-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-project-model/1.5.31/3a6adaf7f626af7ce62a3734975eb2154ae12e58/kotlin-project-model-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.5.31/aaea854be2cfc06373dfc11be5a6ba9ca5ca84a6/kotlin-script-runtime-1.5.31.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-util-io/1.5.31/61c784021068d1ddd347eeba86384dbf92c725ca/kotlin-util-io-1.5.31.jar" />
+              <option value="$KOTLIN_BUNDLED$/lib/allopen-compiler-plugin.jar" />
+            </array>
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-webflux:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-kotlin:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.5.31" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.5.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.31" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: io.projectreactor:reactor-core:3.4.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver-reactivestreams:4.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-mongodb:3.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-json:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-webflux:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-reactor-netty:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-web:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.5.31" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.5.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.5.31" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter-logging:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.annotation:jakarta.annotation-api:1.3.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.yaml:snakeyaml:1.28" level="project" />
+    <orderEntry type="library" name="Gradle: org.reactivestreams:reactive-streams:1.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:mongodb-driver-core:4.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.mongodb:bson:4.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-commons:2.5.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.32" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: io.projectreactor.netty:reactor-netty-http:1.0.11" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.12.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.5.31" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:jul-to-slf4j:1.7.32" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.3.10" level="project" />
+    <orderEntry type="library" name="Gradle: io.projectreactor.netty:reactor-netty-core:1.0.11" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http2:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-http:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns-native-macos:osx-x86_64:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver-dns:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.2.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.logging.log4j:log4j-api:2.14.1" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-handler-proxy:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-handler:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-buffer:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-common:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-transport-native-unix-common:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-dns:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-resolver:4.1.68.Final" level="project" />
+    <orderEntry type="library" name="Gradle: io.netty:netty-codec-socks:4.1.68.Final" level="project" />
+  </component>
+</module>
