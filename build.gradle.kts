@@ -15,15 +15,19 @@ repositories {
 	mavenCentral()
 }
 
+// TODO separate dependencies by package, sort them
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.5.4")
-	implementation("org.springframework.boot:spring-boot-starter-webflux:2.5.4")
+	// TODO uncomment when MongoDB is set up
+	// implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.5.4")
+	implementation("org.springframework.boot:spring-boot-starter-webflux:2.5.5")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.5")
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.4")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.5.2-native-mt")
-	testImplementation("org.springframework.boot:spring-boot-starter-test:2.5.4")
+	implementation("org.springframework.boot:spring-boot-gradle-plugin:2.5.5")
+
+	testImplementation("org.springframework.boot:spring-boot-starter-test:2.5.5")
 	testImplementation("io.projectreactor:reactor-test:3.4.10")
 }
 
