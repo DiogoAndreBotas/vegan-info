@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  web:
+    container_name: vegan_info_web
+    build:
+      context: .
+      target: BUILD_IMAGE
+    volumes:
+      - .:/web
+    command: /web/gradlew bootRun
+    ports:
+      - "8000:8000"
+    depends_on:
+      - database
+
+  tests:
+    container_name: vegan_info_tests
+    build:
+      context: .
+      target: BUILD_IMAGE
+    volumes:
+      - .:/test
+    command: /test/gradlew cleanTest test
+    depends_on:
+      - database
+
+  database:
+    image: mongo:latest
+    container_name: vegan_info_mongodb
+    ports:
+      - "27017-27019:27017-27019"
