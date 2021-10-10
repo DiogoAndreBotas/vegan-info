@@ -13,8 +13,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Run Linter (ktlint)
+        run: ./gradlew ktlintFormat
 
-      - name: Gradle Tests
+      - name: Run Tests
         run: ./gradlew clean test
         
       - name: Build, Push and Release a Docker container to Heroku.
