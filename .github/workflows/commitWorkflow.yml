@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run Linter (ktlint)
-        run: ./gradlew ktlintCheck
+        run: ./gradlew ktlintFormat
 
       - name: Run Tests
         run: ./gradlew clean test
