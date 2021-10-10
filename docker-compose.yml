@@ -29,4 +29,4 @@ services:
     image: mongo:latest
     container_name: vegan_info_mongodb
     ports:
-      - "27017-27019:27017-27019"
+      - "27017:27017"
