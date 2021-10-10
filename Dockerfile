@@ -8,6 +8,6 @@ RUN ./gradlew build --no-daemon
 FROM adoptopenjdk/openjdk11:debian-slim as PRODUCTION_IMAGE
 WORKDIR /app
 VOLUME /tmp
-COPY --from=BUILD_IMAGE /workspace/app/build/libs/*.jar vegan-info.jar
+COPY --from=BUILD_IMAGE /workspace/app/build/libs/vegan-info-plain.jar /app/vegan-info.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app/vegan-info.jar"]
