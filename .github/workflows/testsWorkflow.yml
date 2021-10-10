@@ -13,5 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Run Linter (ktlint)
+        run: ./gradlew ktlintCheck
+
       - name: Run Tests
         run: ./gradlew clean test
