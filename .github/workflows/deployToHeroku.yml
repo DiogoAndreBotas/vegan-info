@@ -3,6 +3,8 @@ name: Deploy App
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
   workflow_dispatch:
 
@@ -14,12 +16,26 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run Gradle Tests
+      - name: Gradle Tests
         run: ./gradlew clean test
 
-      - name: Build, Push and Release a Docker container to Heroku.
-        uses: gonuit/heroku-docker-deploy@v1.3.3
-        with:
-          heroku_app_name: vegan-info
-          email: gamebreak24@gmail.com
-          heroku_api_key: a20208e3-0e93-40c3-9cb1-4570aeda19e3
+      - name: Build and Push Docker Image to Heroku
+        env:
+          HEROKU_APP_NAME: vegan-info
+          DOCKERFILE_DIRECTORY: "."
+          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          DOCKERFILE_NAME: "Dockerfile"
+          DOCKER_OPTIONS: "--no-cache"
+        run: |
+          cd ${DOCKERFILE_DIRECTORY}
+          echo ${HEROKU_API_KEY} | docker login \
+            --username=${HEROKU_EMAIL} \
+            registry.heroku.com \
+            --password-stdin
+          docker build \
+            --file ${DOCKERFILE_NAME} \
+            ${DOCKER_OPTIONS} \
+            --tag registry.heroku.com/${HEROKU_APP_NAME}/web .
+          heroku container:push web --app ${HEROKU_APP_NAME}
+          heroku container:release web --app ${HEROKU_APP_NAME}
