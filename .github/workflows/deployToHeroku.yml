@@ -3,8 +3,6 @@ name: Deploy App
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
   workflow_dispatch:
 
@@ -18,24 +16,15 @@ jobs:
 
       - name: Gradle Tests
         run: ./gradlew clean test
-
-      - name: Build and Push Docker Image to Heroku
-        env:
-          HEROKU_APP_NAME: vegan-info
-          DOCKERFILE_DIRECTORY: "."
-          HEROKU_EMAIL: ${{ secrets.HEROKU_EMAIL }}
-          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          DOCKERFILE_NAME: "Dockerfile"
-          DOCKER_OPTIONS: "--no-cache"
-        run: |
-          cd ${DOCKERFILE_DIRECTORY}
-          echo ${HEROKU_API_KEY} | docker login \
-            --username=${HEROKU_EMAIL} \
-            registry.heroku.com \
-            --password-stdin
-          docker build \
-            --file ${DOCKERFILE_NAME} \
-            ${DOCKER_OPTIONS} \
-            --tag registry.heroku.com/${HEROKU_APP_NAME}/web .
-          heroku container:push web --app ${HEROKU_APP_NAME}
-          heroku container:release web --app ${HEROKU_APP_NAME}
+        
+      - name: Build, Push and Release a Docker container to Heroku.
+        # You may pin to the exact commit or the version.
+        # uses: gonuit/heroku-docker-deploy@9ab97585f979857642d66612a2ae4062b3347d53
+        uses: gonuit/heroku-docker-deploy@v1.3.3
+        with:
+          # Name of the heroku application to which the build is to be sent.
+          heroku_app_name: vegan-info
+          # The email address associated with your Heroku account.
+          email: ${{ secrets.HEROKU_EMAIL }}
+          # Heroku API key associated with provided user's email.
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
