@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class VeganInfoApplication
 
 fun main(args: Array<String>) {
-	runApplication<VeganInfoApplication>(*args)
+    runApplication<VeganInfoApplication>(*args)
 }
