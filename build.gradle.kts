@@ -16,17 +16,17 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.5.4")
-    implementation("org.springframework.boot:spring-boot-starter-webflux:2.5.5")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.0")
-    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.4")
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive:2.5.6")
+    implementation("org.springframework.boot:spring-boot-starter-webflux:2.6.1")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1")
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:1.1.5")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.5.2-native-mt")
-    implementation("org.springframework.boot:spring-boot-gradle-plugin:2.5.5")
+    implementation("org.springframework.boot:spring-boot-gradle-plugin:2.6.1")
 
-    testImplementation("org.springframework.boot:spring-boot-starter-test:2.5.5")
-    testImplementation("io.projectreactor:reactor-test:3.4.10")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.6.1")
+    testImplementation("io.projectreactor:reactor-test:3.4.13")
 }
 
 tasks.withType<KotlinCompile> {
@@ -40,9 +40,7 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-// Build executable jar
 tasks.jar {
     enabled = true
-    // Remove `plain` postfix from jar file name
     archiveClassifier.set("")
 }

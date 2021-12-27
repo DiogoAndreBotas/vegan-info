@@ -1,11 +1,10 @@
 package com.diogobotas.veganinfo.model
 
 import org.springframework.data.mongodb.core.mapping.Document
-import java.nio.Buffer
 
-@Document
+@Document(collection = "ingredient")
 class Ingredient (
     val name: String,
     val description: String,
-    val image: Buffer
+    // TODO add image
 )
